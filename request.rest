@@ -1,0 +1,112 @@
+GET http://localhost:3001/workplace
+
+###
+GET http://localhost:3001/workplace/82
+
+###
+
+POST http://localhost:3001/workplace
+Content-Type: application/json
+
+{
+    "worktype": "123",
+    "harvest": 123,
+    "damaged": 123,
+    "username": "123",
+    "note": "123"
+}
+
+###
+
+PATCH http://localhost:3001/workplace/1
+Content-Type: application/json
+
+{
+    "worktype": "123",
+    "harvest": 123,
+    "damaged": 123,
+    "username": "123",
+    "note": "123"
+}
+
+###
+DELETE http://localhost:3001/workplace/61
+
+###
+GET http://localhost:3001/drying
+
+###
+POST http://localhost:3001/drying
+Content-Type: application/json
+
+{
+    "beforeweight": 123.000,
+    "afterweight": 123.000
+}
+
+###
+GET http://localhost:3001/packing
+
+###
+POST http://localhost:3001/packing
+Content-Type: application/json
+
+{
+    "quantity": 123,
+    "netweight": 123.000
+}
+
+###
+GET http://localhost:3001/sorting
+
+###
+POST http://localhost:3001/sorting
+Content-Type: application/json
+
+{
+    "mushroomname": "เห็ด",
+    "weight": 123.000
+}
+
+###
+GET http://localhost:3001/processed
+
+###
+POST http://localhost:3001/processed
+Content-Type: application/json
+
+{
+    "mushroomname": "เห็ด",
+    "sortingweight": 123.000
+}
+
+###
+GET http://localhost:3001/productfresh/sum
+
+###
+GET http://localhost:3001/buymushroom/33
+
+###
+POST http://localhost:3001/personnel
+Content-Type: application/json
+
+{
+    "codename": "123",
+    "name": "123",
+    "birthday": "2/2/2019",
+    "idcard": "123",
+    "phone": "123",
+    "address": "123"
+}
+
+###
+GET http://localhost:3001/personnel
+
+###
+GET http://localhost:3001/workplace/18
+
+
+
+
+
+
