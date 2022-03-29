@@ -18,7 +18,7 @@ Content-Type: application/json
 
 ###
 
-PATCH http://localhost:3001/workplace/1
+PATCH http://localhost:3001/workplace/21
 Content-Type: application/json
 
 {
@@ -103,10 +103,20 @@ Content-Type: application/json
 GET http://localhost:3001/personnel
 
 ###
-GET http://localhost:3001/workplace/18
+GET http://localhost:3001/login
 
+###
+PATCH http://localhost:3001/warehouse/sell/24
+Content-Type: application/json
 
+{
+    "amount": 10
+}
 
+###
+PATCH http://localhost:3001/warehouse/sell/24
 
+###
+GET http://localhost:3001/sell
 
 

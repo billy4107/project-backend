@@ -9,9 +9,6 @@ const Warehouse = sequelize.define('warehouse', {
         primaryKey: true,
         autoIncrement: true
     },
-    code: {
-        type: DataTypes.STRING
-    },
     mushroomname: {
         type: DataTypes.STRING
     },

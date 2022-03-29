@@ -48,6 +48,22 @@ export const updateWarehouse = async (req, res) => {
     }
 }
 
+export const updateWarehouseSell = async (req, res) => {
+    const amount = req.body.amount;
+    const wareid = req.params.wareid
+    try {
+            const warehouseModels = await warehouseModel.sequelize.query(`UPDATE warehouse SET quantity = quantity - $amount WHERE wareid = $wareid`, {
+            bind: { amount, wareid },
+        });
+        // res.json({
+        //     "message": "warehouseModel Updated"
+        // });
+        res.json(warehouseModels);
+    } catch (error) {
+        res.json({ message: error.message });
+    }
+}
+
 export const deleteWarehouse = async (req, res) => {
     try {
         await warehouseModel.destroy({
